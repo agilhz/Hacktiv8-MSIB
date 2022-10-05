@@ -1,0 +1,321 @@
+/* CSS Reset Setting =============================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+/* Root ==========================================================*/
+
+:root {
+  --color-1: white;
+  --color-2: blue;
+  --color-3: skyblue;
+  --color-4: #3a7815;
+  --color-5: black;
+}
+
+/* Body */
+
+body {
+  background-color: var(--color-3);
+  font-family: sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  row-gap: 3em;
+}
+
+/* header */
+
+header {
+  grid-area: header;
+  padding: 0 5em;
+  background-color: var(--color-1);
+  box-shadow: 0 0 5px var(--color-5);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  display: inline-block;
+  padding: 0.8em;
+  text-decoration: none;
+  color: var(--color-5);
+}
+
+header a:active {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  box-shadow: 0 0 5px var(--color-5);
+}
+
+header button {
+  display: none;
+  background-color: var(--color-1);
+  width: 5em;
+  height: 2em;
+  margin: 0.5em;
+  border-radius: 3px;
+  background-color: var(--color-3);
+  color: var(--color-1);
+  border: 1 solid var(--color-1);
+  box-shadow: 0 0 5px var(--color-5);
+}
+
+header button:active {
+  background-color: var(--color-1);
+  color: var(--color-5);
+}
+
+/* main */
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "profile"
+    "form";
+  row-gap: 3em;
+}
+
+.profile-form {
+  background-color: var(--color-1);
+  margin: 0 5em;
+}
+
+/* main-profile */
+
+.profile {
+  grid-area: profile;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-5);
+}
+
+.profile-left {
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile-left img {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 1em 1.5em;
+}
+
+.profile-center {
+  flex-grow: 1;
+  margin: 1em;
+  border-right: 2px solid var(--color-5);
+}
+
+.profile-center p {
+  display: block;
+  margin: 0.5em 0 0.5em;
+}
+
+.btn-profile-center {
+  margin: 1em 0 0 0;
+}
+
+.btn-profile-center button {
+  width: 8em;
+  height: 3em;
+  border-radius: 2px;
+}
+
+.btn-profile-center .left {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  border: none;
+  box-shadow: 0 0 7px var(--color-2);
+  margin-right: 10px;
+}
+
+.btn-profile-center .left:active {
+  background-color: darkblue;
+  color: gray;
+}
+
+.btn-profile-center .right {
+  background-color: var(--color-1);
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
+}
+
+.btn-profile-center .right:active {
+  background-color: lightgray;
+}
+
+.profile-right {
+  flex-grow: 5;
+}
+
+table th {
+  padding-right: 35px;
+  line-height: 25px;
+}
+
+table p {
+  text-align: justify;
+}
+
+/* main-form */
+
+.form {
+  grid-area: form;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-5);
+}
+
+.form input {
+  display: block;
+  border: 1px solid var(--color-5);
+  border-radius: 2px;
+  width: 100%;
+  height: 25px;
+}
+
+.form button {
+  width: 100%;
+  height: 25px;
+  color: var(--color-1);
+  background-color: var(--color-4);
+  border: none;
+  box-shadow: 0 0 5px var(--color-4);
+}
+
+.form button:active {
+  background-color: darkgreen;
+}
+
+/* footer */
+
+footer {
+  grid-area: footer;
+  background-color: var(--color-1);
+  box-shadow: 0 0 5px var(--color-5);
+  height: 100%;
+  text-align: center;
+  padding: 0.8em;
+}
+
+/* media-query */
+
+@media (max-width: 992px) {
+  nav {
+    justify-content: center;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-center {
+    border: none;
+    text-align: center;
+    width: auto;
+  }
+
+  .profile-right {
+    margin: 15px;
+    flex-grow: 0;
+    width: auto;
+  }
+
+  .profile-left {
+    flex-grow: 0;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header,
+  main,
+  .profile-form {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: end;
+  }
+
+  nav {
+    justify-content: end;
+  }
+
+  header button {
+    display: inline-block;
+    z-index: -1;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    width: 55%;
+    flex-direction: column;
+    justify-content: start;
+    background-color: var(--color-1);
+    height: 100vmax;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    box-shadow: 0 0 5px var(--color-5);
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
+
+  nav a:hover {
+    background-color: var(--color-3);
+    width: 100vw;
+    color: var(--color-1);
+  }
+
+  .profile,
+  .form {
+    border-radius: 0;
+  }
+
+  .form {
+    padding: 10px;
+  }
+
+  footer {
+    height: 100%;
+  }
+}
