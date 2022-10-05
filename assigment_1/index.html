@@ -6,8 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assigment_1</title>
     <link rel="stylesheet" href="bootsrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="bootsrap/bootstrap.min.js"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">Hacktiv8</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portifolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tutorial </a>
+                <ul class="dropdown-menu shadow m-0 rounded-1">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">JavaSrcipt</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JQuery</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Codeigniter</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form>
+              <div class="container-fluid">
+                <div class="row">
+                  <button class="btn btn-sm btn-dark mx-1 my-1 col rounded-1" type="submit">Login</button>
+                  <button class="btn btn-sm btn-primary mx-1 my-1 col rounded-1" type="submit">Daftar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Jumbotron -->
+      <section class="jumbotron p-3 p-sm-5 mt-sm-4 mt-5 text-center">
+        <div class="container py-5 bg-light rounded-2">
+          <h1 class="display-5 mt-4 fw-bold">Selamat datang di www.hacktiv8.com!</h1>
+          <p class="fs-4">Tutorial pemrograman bahasa Indonesia terlengkap di muka bumi_</p>
+          <button class="btn btn-primary btn-lg my-4 rounded-1" type="button">Mulai Belajar</button>
+        </div>
+      </section>
+
+      <!-- Card -->
+      <section class="card container border-0 text-lg-start text-center">
+        <div class="row row-cols-1 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card rounded-1">
+              <img src="img/jquery.svg" class="card-img-top p-2 img-fluid w-50 mx-auto" alt="jquery" />
+              <div class="card-body">
+                <h5 class="card-title">JQuery</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eligendi nisi, pariatur sint, porro vitae officia nesciunt ipsam, architecto dolore commodi cumque dolorum eius minima vel sunt a aspernatur est!
+                </p>
+              </div>
+              <button class="btn btn-sm col-4 rounded-1 btn-primary m-lg-3 my-3 mx-auto">Lihat</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-1">
+              <img src="img/ionic.svg" class="card-img-top p-2 img-fluid w-50 mx-auto" alt="ionic" />
+              <div class="card-body">
+                <h5 class="card-title">Ionic</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eligendi nisi, pariatur sint, porro vitae officia nesciunt ipsam, architecto dolore commodi cumque dolorum eius minima vel sunt a aspernatur est!
+                </p>
+              </div>
+              <button class="btn btn-sm col-4 rounded-1 btn-primary m-lg-3 my-3 mx-auto">Lihat</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-1">
+              <img src="img/codeigniter.svg" class="card-img-top p-2 img-fluid w-50 mx-auto" alt="codeigniter" />
+              <div class="card-body">
+                <h5 class="card-title">Codeigniter</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eligendi nisi, pariatur sint, porro vitae officia nesciunt ipsam, architecto dolore commodi cumque dolorum eius minima vel sunt a aspernatur est!
+                </p>
+              </div>
+              <button class="btn btn-sm col-4 rounded-1 btn-primary m-lg-3 my-3 mx-auto">Lihat</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-1">
+              <img src="img/bootstrap.svg" class="card-img-top p-2 img-fluid w-50 mx-auto" alt="bootsrap" />
+              <div class="card-body">
+                <h5 class="card-title">Bootsrap</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eligendi nisi, pariatur sint, porro vitae officia nesciunt ipsam, architecto dolore commodi cumque dolorum eius minima vel sunt a aspernatur est!
+                </p>
+              </div>
+              <button class="btn btn-sm col-4 rounded-1 btn-primary m-lg-3 my-3 mx-auto">Lihat</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5">
+      <section class="container-fluid text-center bg-light mt-auto">
+        <p class="mb-0 pt-3">Copyright &#169; 2022 Dev Team All Right Reserved</p>
+        <p class="mb-0 pb-3">Develop by <a href="https://www.hacktiv8.com/" class="text-decoration-none text-primary">www.hacktiv8.com</a></p>
+      </section>
+    </footer>
+    <script src="bootsrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
