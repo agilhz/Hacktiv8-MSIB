@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
@@ -16,7 +17,7 @@ button, a {
   --color-1: white;
   --color-2: blue;
   --color-3: skyblue;
-  --color-4: #3A7815;
+  --color-4: #3a7815;
   --color-5: black;
 }
 
@@ -29,10 +30,11 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-      "header"
-      "main"
-      "footer";
+    "header"
+    "main"
+    "footer";
   row-gap: 3em;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -99,8 +101,8 @@ main {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-      "profile"
-      "form";
+    "profile"
+    "form";
   row-gap: 3em;
 }
 
@@ -174,7 +176,6 @@ main {
 
 .btn-profile-center .right:active {
   background-color: lightgray;
-
 }
 
 .profile-right {
@@ -186,7 +187,7 @@ table th {
   line-height: 25px;
 }
 
-table p{
+table p {
   text-align: justify;
 }
 
@@ -233,9 +234,8 @@ footer {
 
 /* media-query */
 
-@media (max-width:992px) {
-
-  nav{
+@media (max-width: 992px) {
+  nav {
     justify-content: center;
   }
 
@@ -261,8 +261,10 @@ footer {
   }
 }
 
-@media (max-width:768px){
-  header, main, .profile-form {
+@media (max-width: 768px) {
+  header,
+  main,
+  .profile-form {
     margin: 0;
     padding: 0;
   }
@@ -305,7 +307,8 @@ footer {
     color: var(--color-1);
   }
 
-  .profile, .form {
+  .profile,
+  .form {
     border-radius: 0;
   }
 
