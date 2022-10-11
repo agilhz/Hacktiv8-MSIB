@@ -24,14 +24,18 @@
     <main>
       <section class="profile-form profile">
         <div class="profile-left">
-          <img src="img/photo.png" alt="photo-agil" width="150" height="150" />
+          <div class="container-img">
+            <img src="img/photo.png" alt="photo-agil" id="photo" />
+            <input type="file" id="file" />
+            <label for="file" id="upload">Choose Photo</label>
+          </div>
         </div>
         <div class="profile-center">
           <h1>Nama Anda</h1>
           <p>Front End Designer</p>
           <div class="btn-profile-center">
-            <button class="left">Kontak</button>
-            <button class="right">Resume</button>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-resume">Resume</button>
           </div>
         </div>
         <div class="profile-right">
@@ -84,6 +88,6 @@
     <footer>
       <p>Copyright &#169; 2022 Agil Haubi Zikri</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="/assigment_2/script.js"></script>
   </body>
 </html>
