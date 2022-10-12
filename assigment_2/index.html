@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challenge_2</title>
+    <title>Assigment_2</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,10 +31,10 @@
           </div>
         </div>
         <div class="profile-center">
-          <h1>Nama Anda</h1>
-          <p>Front End Designer</p>
+          <h1 id="nama">Nama Anda</h1>
+          <p id="role">Front End Designer</p>
           <div class="btn-profile-center">
-            <button class="btn-edit">Edit</button>
+            <button id="btn-edit">Edit</button>
             <button class="btn-resume">Resume</button>
           </div>
         </div>
@@ -43,23 +43,23 @@
             <tbody>
               <tr>
                 <th><p>Availability</p></th>
-                <td><p>Full Time</p></td>
+                <td><p id="availability">Full Time</p></td>
               </tr>
               <tr>
                 <th><p>Usia</p></th>
-                <td><p>17</p></td>
+                <td><p id="usia">17</p></td>
               </tr>
               <tr>
                 <th><p>Lokasi</p></th>
-                <td><p>Jakarta, Indonesia</p></td>
+                <td><p id="lokasi">Jakarta, Indonesia</p></td>
               </tr>
               <tr>
                 <th><p>Pengalaman</p></th>
-                <td><p>2</p></td>
+                <td><p id="years-experience">2</p></td>
               </tr>
               <tr>
                 <th><p>Email</p></th>
-                <td><p>Developer@gmail.com</p></td>
+                <td><p id="email">Developer@gmail.com</p></td>
               </tr>
             </tbody>
           </table>
@@ -67,21 +67,21 @@
       </section>
       <section class="profile-form form">
         <form action="">
-          <label for="nama">Nama</label>
-          <input type="text" name="nama" /><br />
-          <label for="role">Role</label>
-          <input type="text" name="role" /><br />
-          <label for="availability">Availability</label>
-          <input type="text" name="availability" /><br />
-          <label for="usia">Usia</label>
-          <input type="text" name="usia" /><br />
-          <label for="lokasi">Lokasi</label>
-          <input type="text" name="lokasi" /><br />
-          <label for="years-experience">Years Experience</label>
-          <input type="text" name="years-experience" /><br />
-          <label for="email">Email</label>
-          <input type="text" name="email" /><br />
-          <button type="submit">Submit</button>
+          <label for="input-nama">Nama</label>
+          <input type="text" id="input-nama" required /><br />
+          <label for="input-role">Role</label>
+          <input type="text" id="input-role" required /><br />
+          <label for="input-availability">Availability</label>
+          <input type="text" id="input-availability" required /><br />
+          <label for="input-usia">Usia</label>
+          <input type="text" id="input-usia" required /><br />
+          <label for="input-lokasi">Lokasi</label>
+          <input type="text" id="input-lokasi" required /><br />
+          <label for="input-years-experience">Years Experience</label>
+          <input type="text" id="input-years-experience" required /><br />
+          <label for="input-email">Email</label>
+          <input type="text" id="input-email" required /><br />
+          <button type="submit" id="submit">Submit</button>
         </form>
       </section>
     </main>
