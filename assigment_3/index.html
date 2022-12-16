@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="base container">
+      <div class="container-fluid vh-100 row m-0">
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="text-center row row-cols-1">
+            <div class="col-12 col-lg-6 mb-3 mx-auto p-0">
+              <h1>COVID-19 TRACKER</h1>
+              <div class="input-group">
+                <input type="text" class="form-control input" placeholder="Masukkan Nama Negara" aria-describedby="btn" id="input" />
+                <button class="btn btn-primary" type="button" id="btn">Get Data</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-auto">
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/coronavirus.png" class="card-img-top" alt="coronavirus" />
+                    <div class="card-body">
+                      <h2>Active</h2>
+                      <p class="card-text" id="active"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/spreading.png" class="card-img-top" alt="spreading" />
+                    <div class="card-body">
+                      <h2>New</h2>
+                      <p class="card-text" id="new"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/patient.png" class="card-img-top" alt="patient recovered" />
+                    <div class="card-body">
+                      <h2>Recovered</h2>
+                      <p class="card-text" id="recovered"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/total.png" class="card-img-top" alt="total" />
+                    <div class="card-body">
+                      <h2>Total Covid</h2>
+                      <p class="card-text" id="total"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/death.png" class="card-img-top" alt="death" />
+                    <div class="card-body">
+                      <h2>Total Death</h2>
+                      <p class="card-text" id="deaths"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 mb-3">
+                    <img src="img/blood-sample.png" class="card-img-top" alt="covid test" />
+                    <div class="card-body">
+                      <h2>Total Test</h2>
+                      <p class="card-text" id="t-test"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
